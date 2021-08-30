@@ -814,7 +814,7 @@ def runGames( layout, pacman, ghosts, display, numGames, record, numTraining = 0
             else:
                 savedDisplay = game.run(savedDisplay)
 
-            if game.gameQuit:
+            if game.gameOver:
                 return (games, display)
             
             # Show win / loss message
