@@ -124,3 +124,13 @@ class BaseAgent(game.Agent):
 #args = readCommand(["--pacman","BaseAgent",#"PacmanWithState",
 #                    "--layout","mediumEmpty"])
 #runGames(**args)
+
+class ZeroIntelligent(BaseAgent):
+    class State:
+        def __init__(self):
+            self.actions = ["GoRight", "GoLeft", "GoForward", "GoBack"]
+
+    def choose_action(self, state):
+        action = random.choice(state.actions)
+        print("Performing action:", action)
+        return action
