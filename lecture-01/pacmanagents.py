@@ -171,6 +171,6 @@ class Intelligent(BaseAgent):
     def update_state_with_action(self, action, state):
         state.previous_action = action
         # Print the representation (i.e. __repr__) of the state
-        if debug:
+        if self.debug:
             print(state)
         return state

@@ -768,7 +768,7 @@ def runGamesWithMenu( layout, pacman, ghosts, display, numGames, record, numTrai
         
         # TODO: Esperar una tecla al comienzo de cada juego?
 
-def runGames( layout, pacman, ghosts, display, numGames, record, numTraining = 0, catchExceptions=False, timeout=30, keyboardGhosts=[], savedDisplay=None ):
+def runGames( layout, pacman, ghosts, display, numGames, record, numTraining = 0, gameMenu = False, catchExceptions=False, timeout=30, keyboardGhosts=[], savedDisplay=None ):
     import __main__
     import time
     __main__.__dict__['_display'] = display
